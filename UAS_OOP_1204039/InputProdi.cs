@@ -36,7 +36,7 @@ namespace UAS_OOP_1204039
                 {
                     newKode = result["kode_prodi"].ToString();
                     string angkaKode = Regex.Match(newKode, @"\d+").Value;
-                    newKodeProdi = Int16.Parse(angkaKode) + 1;
+                    newKodeProdi = Int32.Parse(angkaKode) + 1;
                     if (newKodeProdi >= 10)
                     {
                         newKode = "PRD" + newKodeProdi;

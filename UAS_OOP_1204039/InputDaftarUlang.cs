@@ -36,9 +36,9 @@ namespace UAS_OOP_1204039
 
         private void aRB_MouseClick(object sender, MouseEventArgs e)
         {
-            int diskon = (Int16.Parse(biayaKuliahTB.Text.ToString()) * 50) / 100;
+            int diskon = (Int32.Parse(biayaKuliahTB.Text.ToString()) * 50) / 100;
             potonganBiayaTB.Text = diskon.ToString();
-            int total = Int16.Parse(biayaKuliahTB.Text.ToString()) - diskon;
+            int total = Int32.Parse(biayaKuliahTB.Text.ToString()) - diskon;
             totalTB.Text = total.ToString();
         }
 
@@ -57,17 +57,17 @@ namespace UAS_OOP_1204039
 
         private void bRB_MouseClick(object sender, MouseEventArgs e)
         {
-            int diskon = (Int16.Parse(biayaKuliahTB.Text.ToString()) * 25) / 100;
+            int diskon = (Int32.Parse(biayaKuliahTB.Text.ToString()) * 25) / 100;
             potonganBiayaTB.Text = diskon.ToString();
-            int total = Int16.Parse(biayaKuliahTB.Text.ToString()) - diskon;
+            int total = Int32.Parse(biayaKuliahTB.Text.ToString()) - diskon;
             totalTB.Text = total.ToString();
         }
 
         private void cRB_MouseClick(object sender, MouseEventArgs e)
         {
-            int diskon = (Int16.Parse(biayaKuliahTB.Text.ToString()) * 10) / 100;
+            int diskon = (Int32.Parse(biayaKuliahTB.Text.ToString()) * 10) / 100;
             potonganBiayaTB.Text = diskon.ToString();
-            int total = Int16.Parse(biayaKuliahTB.Text.ToString()) - diskon;
+            int total = Int32.Parse(biayaKuliahTB.Text.ToString()) - diskon;
             totalTB.Text = total.ToString();
         }
 
