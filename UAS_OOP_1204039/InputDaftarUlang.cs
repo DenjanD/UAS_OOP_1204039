@@ -93,7 +93,7 @@ namespace UAS_OOP_1204039
 
         private void submitBT_Click(object sender, EventArgs e)
         {
-            if (NPMTB.Text != "" && !NPMTB.Text.ToString().Any(char.IsDigit))
+            if (NPMTB.Text != "" && NPMTB.Text.ToString().Any(char.IsDigit))
             {
                 if (aRB.Checked != false || bRB.Checked != false || cRB.Checked != false)
                 {
